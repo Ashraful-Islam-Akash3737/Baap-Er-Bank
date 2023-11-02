@@ -15,11 +15,18 @@ document.getElementById('btn-submit').addEventListener('click', function(){
 
     // DENGER: DO NOT VERIFY EMAIL PASSWORD on the client side like this
     // step 4: verify email and password
-    if(email === "ashrafulislamakash@gmail.com" && password === "akash"){
-        console.log("ture");
+    if(email === "akash@gmail.com" && password === "akash"){
+        window.location.href = "bank.html";
     }
     else{
-        console.log("false");
+        alert("wrong information");
+        // if(email !== "ashrafulislamakash@gmail.com"){
+        //     alert("invalid email");
+        // }
+        // if(password !== "akash"){
+        //     alert("invalid password");
+        // }
+        
     }
 
 })
